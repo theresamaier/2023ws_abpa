@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <>
       <Heading mt={"70px"}>
-        Drinking behaviour in Germany - is within the limits or cause for
-        concern?{" "}
+        Test - if this is working! Drinking behavior in Germany - is within the
+        limits or cause for concern?{" "}
       </Heading>
       <Text mt={"60px"}>
         Alcohol is well established in our society and is almost seen as an
