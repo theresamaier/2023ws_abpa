@@ -34,7 +34,7 @@ export const data = {
   datasets: [
     {
       type: "line",
-      label: "Dataset 1",
+      label: "pure alcohol",
       borderColor: "rgb(255, 99, 132)",
       borderWidth: 2,
       fill: false,
@@ -42,7 +42,7 @@ export const data = {
     },
     {
       type: "bar",
-      label: "Dataset 2",
+      label: "alcoholic mixed drinks",
       backgroundColor: "#0097A7",
       data: data01,
     },

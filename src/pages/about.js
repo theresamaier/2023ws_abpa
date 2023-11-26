@@ -18,9 +18,9 @@ const PageAbout = () => {
       <Flex>
         <Box>
           <Text mt={"10px"}>
-            We are represented in Germany with seven locations in Cologne,
-            Mainz, Berlin/ Potsdam, Aachen, Brühl, Neuss and Solingen. Hover the
-            the map to see how many students are currently studying at CBS!{" "}
+            CBS is represented in Germany with seven locations in Cologne,
+            Mainz, Berlin/ Potsdam, Aachen, Brühl, Neuss and Solingen. Hover
+            over the map to see how many students are currently studying at CBS!{" "}
           </Text>
         </Box>
       </Flex>

@@ -1,137 +1,125 @@
 import React from "react";
-import styled from "styled-components";
 import { useTable } from "react-table";
 
-//import makeData from "./makeData";
-
-const Styles = styled.div`
-  padding: 1rem;
-
-  table {
-    border-spacing: 0;
-    border: 1px solid black;
-
-    tr {
-      :last-child {
-        td {
-          border-bottom: 0;
-        }
-      }
-    }
-
-    th,
-    td {
-      margin: 0;
-      padding: 0.5rem;
-      border-bottom: 1px solid black;
-      border-right: 1px solid black;
-
-      :last-child {
-        border-right: 0;
-      }
-    }
-  }
-`;
-
-function Table({ columns, data }) {
-  // Use the state and functions returned from useTable to build your UI
+const SimpleTable = ({ columns, data }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({
-      columns,
-      data,
-    });
+    useTable({ columns, data });
 
-  // Render the UI for your table
   return (
-    <table {...getTableProps()}>
+    <table
+      {...getTableProps()}
+      style={{ border: "1px solid black", borderCollapse: "collapse" }}
+    >
       <thead>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
-              <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+              <th
+                {...column.getHeaderProps()}
+                style={{
+                  padding: "14px",
+                  width: "8px",
+                  border: "1px solid white",
+                  backgroundColor: "rgb(75, 192, 192)",
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: "15px",
+                }}
+              >
+                {column.render("Header")}
+              </th>
             ))}
           </tr>
         ))}
       </thead>
       <tbody {...getTableBodyProps()}>
-        {rows.map((row, i) => {
+        {rows.map((row) => {
           prepareRow(row);
           return (
-            <tr {...row.getRowProps()}>
-              {row.cells.map((cell) => {
-                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
-              })}
+            <tr {...row.getRowProps()} style={{ border: "1px solid black" }}>
+              {row.cells.map((cell) => (
+                <td
+                  {...cell.getCellProps()}
+                  style={{
+                    padding: "14px",
+                    border:
+                      cell.column.id === "column1"
+                        ? "1px solid white"
+                        : "1px solid rgb(75, 192, 192)",
+                    backgroundColor:
+                      cell.column.id === "column1"
+                        ? "rgb(75, 192, 192)"
+                        : "white",
+                    color: cell.column.id === "column1" ? "white" : "#368a8a",
+                    fontWeight:
+                      cell.column.id === "column1" ? "bold" : "normal",
+                    fontSize: "15px",
+                  }}
+                >
+                  {cell.render("Cell")}
+                </td>
+              ))}
             </tr>
           );
         })}
       </tbody>
     </table>
   );
-}
+};
 
-function App() {
-  const makeData = (rows) => {
-    const data = [];
-    for (let i = 0; i < rows; i++) {
-      data.push({
-        firstName: `First${i + 1}`,
-        lastName: `Last${i + 1}`,
-        age: Math.floor(Math.random() * 30) + 20,
-        visits: Math.floor(Math.random() * 10),
-        status: i % 2 === 0 ? "Active" : "Inactive",
-        progress: Math.floor(Math.random() * 100),
-      });
-    }
-    return data;
-  };
-
+const App = () => {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Name",
-        columns: [
-          {
-            Header: "First Name",
-            accessor: "firstName",
-          },
-          {
-            Header: "Last Name",
-            accessor: "lastName",
-          },
-        ],
+        Header: " ",
+        accessor: "column1", // accessor is the "key" in the data
       },
       {
-        Header: "Info",
-        columns: [
-          {
-            Header: "Age",
-            accessor: "age",
-          },
-          {
-            Header: "Visits",
-            accessor: "visits",
-          },
-          {
-            Header: "Status",
-            accessor: "status",
-          },
-          {
-            Header: "Profile Progress",
-            accessor: "progress",
-          },
-        ],
+        Header: "Women",
+        accessor: "column2",
+      },
+      {
+        Header: "Men",
+        accessor: "column3",
       },
     ],
     []
   );
 
-  const data = React.useMemo(() => makeData(20), []);
-
-  return (
-    <Styles>
-      <Table columns={columns} data={data} />
-    </Styles>
+  const data = React.useMemo(
+    () => [
+      {
+        column1: "Low-risk consumption",
+        column2: "< 12g pure alcohol per day",
+        column3: "< 24 g pure alcohol per day",
+      },
+      {
+        column1: "Risky consumption",
+        column2: "> 12g pure alcohol per day",
+        column3: "> 24 g pure alcohol per day",
+      },
+      {
+        column1: "Dangerous consumption",
+        column2: "> 40-80g pure alcohol per day",
+        column3: "> 60-120g pure alcohol per day",
+      },
+      {
+        column1: "High consumption",
+        column2: "> 80 g pure alcohol per day",
+        column3: "> 120 g pure alcohol per day",
+      },
+      {
+        column1: "Episodic binge drinking",
+        column2:
+          "Consumption of 4 or more small alcoholic drinks (12 g alcohol each) on a drinking occasion",
+        column3:
+          "Consumption of 5 or more small alcoholic drinks (12 g alcohol each) on a drinking occasion",
+      },
+    ],
+    []
   );
-}
+
+  return <SimpleTable columns={columns} data={data} />;
+};
 
 export default App;

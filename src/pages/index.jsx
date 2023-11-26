@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Flex, Table } from "@chakra-ui/react";
+import { Heading, Text, Box, Flex } from "@chakra-ui/react";
 import BarChart from "../components/BarChart/index";
 //import ScatterChart from "../components/ScatterChart";
 import PolarChart from "../components/PolarChart/index";
@@ -8,18 +8,19 @@ import Bar2Chart from "@/components/Bar2Chart";
 import MultitypeChart from "@/components/MultitypeChart";
 import Horizontal_Bar from "@/components/Horizontal_Bar";
 import Table_Prev from "@/components/Table_Prev";
+import Table_Prev1 from "@/components/Table_Prev1";
 //import theme from "../theme"
 
 const Home = () => {
   return (
     <>
       <Heading mt={"70px"}>
-        Test - if this is working! Drinking behavior in Germany - is within the
-        limits or cause for concern?{" "}
+        Drinking behavior in Germany - is within the limits or cause for
+        concern?{" "}
       </Heading>
       <Text mt={"60px"}>
-        Test - Alcohol is well established in our society and is almost seen as
-        an essential companion when it comes to social interaction. At most
+        Alcohol is well established in our society and is almost seen as an
+        essential companion when it comes to social interaction. At most
         corporate parties, business meetings or even casual get-togethers and
         after-work meetings, drinking is part of our working culture. The same
         applies to university settings: student parties, bar nights and drinking
@@ -62,27 +63,44 @@ const Home = () => {
             previous years, there has been a slight downward trend in alcohol
             consumption. According to the annual report on addiction, the
             average annual per capita pure alcohol content is around ten litres
-            of pure alcohol.(Deutsche Hauptstelle für Suchtfragen e.V., 2023)
+            of pure alcohol (Deutsche Hauptstelle für Suchtfragen e.V., 2023).
+            Excluding the columns for mixed drinks, a closer look at the
+            development of pure alcohol per capita also shows a general downward
+            trend with occasional short, slight increases over certain years.
+            Over the last twenty years, the amount of pure alcohol consumed per
+            capita in Germany over a year has fallen from 12 to 10.35 litres.
           </Text>
         </Box>
       </Flex>
 
-      <Text mt={"30px"}>Pay attention, here is the first graph.</Text>
+      <Text mt={"30px"}>
+        Well, that seems to be a good indication that we don't have a
+        significant alcohol problem in germany, as consumption behaviour is
+        steadily improving. Let's consider the situation from a different
+        perspective:
+      </Text>
       <Box width="100%" mt={"80px"}>
         <Heading fontSize="m" mb={8}>
           In an international comparison, Germany is one of the high-consumption
           countries
         </Heading>
       </Box>
-      <Flex>
-        <Box width="1000%" mt={"0px"}>
-          <Bar2Chart />
-        </Box>
-      </Flex>
 
       <Flex>
         <Box width="1000%" mt={"0px"}>
           <Horizontal_Bar />
+        </Box>
+      </Flex>
+
+      <Flex>
+        <Box width="1000%" mt={"100px"}>
+          <Table_Prev />
+        </Box>
+      </Flex>
+
+      <Flex>
+        <Box width="1000%" mt={"100px"}>
+          <Table_Prev1 />
         </Box>
       </Flex>
 
@@ -124,12 +142,6 @@ const Home = () => {
       <Flex>
         <Box>
           <Text mt={"20px"}>In the chart you can see that the tbd</Text>
-        </Box>
-      </Flex>
-
-      <Flex>
-        <Box width="1000%" mt={"0px"}>
-          <Table_Prev />
         </Box>
       </Flex>
 
