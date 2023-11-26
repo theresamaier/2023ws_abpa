@@ -25,7 +25,7 @@ export const options = {
   plugins: {
     title: {
       display: true,
-      text: "Hospital admissions due to acute alcohol intoxication",
+      text: "Frequency of binge drinking among men divided by age group",
       font: {
         size: 15,
         weight: "bold",
@@ -56,49 +56,37 @@ export const options = {
 };
 
 const labels = [
-  "2000",
-  "2001",
-  "2002",
-  "2003",
-  "2004",
-  "2005",
-  "2006",
-  "2007",
-  "2008",
-  "2009",
-  "2010",
-  "2011",
-  "2012",
-  "2013",
-  "2014",
-  "2015",
-  "2016",
-  "2017",
-  "2018",
-  "2019",
-  "2020",
+  "aged 18-24",
+  "aged 25-34",
+  "aged 35-44",
+  "aged 45-54",
+  "aged 55-64",
+  "aged 65<",
+  "total",
 ];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: "10-19 year olds",
-      data: [
-        9514, 11466, 12807, 14105, 16423, 19449, 19423, 23165, 25709, 26428,
-        25995, 26351, 26673, 23267, 22391, 21907, 22309, 21721, 20635, 20272,
-        12233, 11692,
-      ],
-      backgroundColor: "#80DEEA",
+      label: "never",
+      data: [26.9, 25.4, 34.4, 37.7, 40, 51.7, 37.8],
+      backgroundColor: "#B2EBF2",
     },
     {
-      label: "> 19 years",
-      data: [
-        44527, 49829, 50317, 56457, 64789, 69489, 68112, 75397, 83574, 88092,
-        89441, 90166, 94922, 93236, 96171, 92089, 93147, 90118, 82389, 79844,
-        64012, 57577,
-      ],
+      label: "less than once a month",
+      data: [21.6, 27.6, 25.4, 26.0, 21.2, 19.9, 23.4],
+      backgroundColor: "#26C6DA",
+    },
+    {
+      label: "every month",
+      data: [36.6, 36, 33.6, 29.8, 31.3, 23.6, 30.9],
       backgroundColor: "#0097A7",
+    },
+    {
+      label: "at least every week",
+      data: [15.0, 10.9, 6.6, 6.5, 7.5, 4.8, 7.9],
+      backgroundColor: "#006064",
     },
   ],
 };

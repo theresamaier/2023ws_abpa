@@ -9,6 +9,8 @@ import MultitypeChart from "@/components/MultitypeChart";
 import Horizontal_Bar from "@/components/Horizontal_Bar";
 import Table_Prev from "@/components/Table_Prev";
 import Table_Prev1 from "@/components/Table_Prev1";
+import StackedBarMenChart from "@/components/StackedBarMenChart";
+import StackedBarWomenChart from "@/components/StackedBarWomenChart";
 //import theme from "../theme"
 
 const Home = () => {
@@ -75,7 +77,7 @@ const Home = () => {
 
       <Text mt={"30px"}>
         Well, that seems to be a good indication that we don't have a
-        significant alcohol problem in germany, as consumption behaviour is
+        significant alcohol problem in germany, as consumption behavior is
         steadily improving. Let's consider the situation from a different
         perspective:
       </Text>
@@ -92,15 +94,81 @@ const Home = () => {
         </Box>
       </Flex>
 
+      <Box width="100%" mt={"80px"}>
+        <Text fontSize="m" mb={8}>
+          It may be that people drink less throughout the year, but occasionally
+          more excessive
+        </Text>
+      </Box>
+
       <Flex>
         <Box width="1000%" mt={"100px"}>
+          <Text>
+            The individual risk of alcohol-related health problems,
+            psychological impairment or social damage increases with the amount
+            of alcohol consumed. Even with small average quantities, there is an
+            additional risk due to episodic binge drinking, in which large
+            quantities of alcohol are consumed within one day. These ifferent
+            consumption classes were defined to assess the individual risk based
+            on average drinking quantities:
+          </Text>
           <Table_Prev />
+          <Text>
+            The term "low-risk" emphasises that there is no such thing as
+            completely risk-free alcohol consumption. Each organ has a specific
+            risk in relation to alcohol, and additional risk factors such as
+            smoking, obesity, cholesterol levels, lack of exercise, existing
+            illnesses and genetic predispositions influence the individual risk
+            of disease. Just for your information: 20 g of ethanol per day is
+            equivalent to about 0.5 litres of beer, 0.2 litres of wine or 0.06
+            litres of spirits, depending on the alcohol content of the beverage
+            types.
+          </Text>
         </Box>
       </Flex>
 
       <Flex>
-        <Box width="1000%" mt={"100px"}>
+        <Box width="1000%" mt={"50px"}>
+          <Heading fontSize="m" mb={8} style={{ fontWeight: "bold" }}>
+            30-day prevalence of alcohol consumption, extrapolation to the
+            18-64-year-old population
+          </Heading>
           <Table_Prev1 />
+        </Box>
+      </Flex>
+
+      <Text mt={"30px"}>
+        The table above illustrates the 30-day prevalence of alcohol consumption
+        in Germany by gender and consumption patterns. The data comes from the
+        Epidemiological Survey on Addiction (ESA) 2021, a representative survey
+        of the German population aged 18 to 64. The prevalence of alcohol
+        consumption in the last 30 days is 70.5% overall (36.1 million people)
+        for the 18 to 64 age group, with a higher prevalence among men (74.8%)
+        compared to women (66.0%). Of the alcohol consumers, 33.3 % drank
+        episodically, with men (41.9 %) doing so more frequently than women
+        (23.3 %). Risky consumption was reported by 21.9% of alcohol consumers,
+        with no significant differences found between men (21.1%) and women
+        (22.9%). The data continues to show widespread alcohol consumption in
+        Germany, with men drinking more frequently and in larger quantities.
+        However, the increase in alcohol consumption among women is remarkable.
+        Of concern is the significantly higher prevalence of episodic binge
+        drinking among men, which is associated with an increased risk of injury
+        and health problems. Both men and women have a relatively high
+        prevalence of risky consumption, which is a risk factor for alcohol
+        dependence and other health problems. The authors of the ESA 2021
+        therefore emphasise the continued need for alcohol prevention measures
+        in Germany.
+      </Text>
+
+      <Flex>
+        <Box width="10300%" mt={"100px"}>
+          <StackedBarMenChart />
+        </Box>
+      </Flex>
+
+      <Flex>
+        <Box width="10300%" mt={"100px"}>
+          <StackedBarWomenChart />
         </Box>
       </Flex>
 
@@ -141,7 +209,26 @@ const Home = () => {
 
       <Flex>
         <Box>
-          <Text mt={"20px"}>In the chart you can see that the tbd</Text>
+          <Text mt={"20px"}>
+            The number of inpatient hospital treatments due to acute alcohol
+            abuse among children and adolescents aged 10 to 19 fell to around
+            11,700 cases in 2021. This corresponds to a decrease of 4.4%
+            compared to the previous year (2020: 12,200 cases) and even 42.3%
+            less than in the pre-corona year 2019 (20,300 cases). The decline is
+            already continuing for the second year and has reached its lowest
+            level since 2001. Demographic effects, including a 19% decline in
+            the population in the 10-19 age group from 2001 to 2021, are also
+            contributing to this decline. In 2021, there was also a decrease of
+            9.1% in hospitalisations for acute alcohol intoxication across all
+            age groups compared to 2020 and as much as 30.8% less than in
+            2019.The data suggests that the coronavirus pandemic, cancelled
+            parties and closed venues could have an impact on the decline, and
+            demographic changes also play a role. Despite the decline, the risk
+            of alcohol poisoning among young people, especially in the 15 to 19
+            age group, remains high. In 2021, 9,500 cases were recorded in this
+            group, while men, especially in the 45 to 49 age group, are more
+            prone to binge drinking.
+          </Text>
         </Box>
       </Flex>
 
