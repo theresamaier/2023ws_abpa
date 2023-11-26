@@ -128,6 +128,12 @@ const Home = () => {
       </Flex>
 
       <Flex>
+        <Box width="1000%" mt={"0px"}>
+          <Table_Prev />
+        </Box>
+      </Flex>
+
+      <Flex>
         <Box>
           <Text mt={"20px"}>
             Sources: <br></br>
