@@ -8,7 +8,7 @@ const PageAbout = () => {
       <Heading>About</Heading>
       <Flex>
         <Box>
-          <Text mt={"20px"}>
+          <Text mt={"20px"} textAlign="justify">
             Hi, this is Theresa. This is about me. I am the designer of this
             page. I am currently studying Digital Transformation Management at
             CBS International Business School in Cologne Germany!{" "}
@@ -17,8 +17,8 @@ const PageAbout = () => {
       </Flex>
       <Flex>
         <Box>
-          <Text mt={"10px"}>
-            CBS is represented in Germany with seven locations in Cologne,
+          <Text mt={"10px"} textAlign="justify">
+            CBS is represented in germany with seven locations in Cologne,
             Mainz, Berlin/ Potsdam, Aachen, Brühl, Neuss and Solingen. Hover
             over the map to see how many students are currently studying at CBS!{" "}
           </Text>
