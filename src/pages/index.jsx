@@ -136,18 +136,18 @@ const Home = () => {
       <Flex>
         <Box width="1000%" mt={"20px"}>
           <Text textAlign="justify">
-            The term "low-risk" emphasizes that there is no such thing as
-            completely risk-free alcohol consumption. Each organ has a specific
-            risk in relation to alcohol, and additional risk factors such as
-            smoking, obesity, cholesterol levels, lack of exercise, existing
-            illnesses and genetic predispositions influence the individual risk
-            of disease. Just for your information: 20 g of ethanol per day is
-            equivalent to about 0.5 litres of beer, 0.2 litres of wine or 0.06
-            litres of spirits, depending on the alcohol content of the beverage
-            types. Well, I don&apos;t know how you feel, but I&apos;m surprised
-            by this strict classification. It feels like you&apos;re already in
-            risky or even more dangerous drinking categories as soon as you go
-            out on a Friday evening.
+            The term &quot;low-risk&quot; emphasizes that there is no such thing
+            as completely risk-free alcohol consumption. Each organ has a
+            specific risk in relation to alcohol, and additional risk factors
+            such as smoking, obesity, cholesterol levels, lack of exercise,
+            existing illnesses and genetic predispositions influence the
+            individual risk of disease. Just for your information: 20 g of
+            ethanol per day is equivalent to about 0.5 litres of beer, 0.2
+            litres of wine or 0.06 litres of spirits, depending on the alcohol
+            content of the beverage types. Well, I don&apos;t know how you feel,
+            but I&apos;m surprised by this strict classification. It feels like
+            you&apos;re already in risky or even more dangerous drinking
+            categories as soon as you go out on a Friday evening.
           </Text>
         </Box>
       </Flex>
@@ -322,15 +322,15 @@ const Home = () => {
         <Box>
           <Text mt={"15px"} textAlign="justify">
             Regular alcohol consumption is one of the leading preventable health
-            risks, and according to the World Health Organization's (WHO) Global
-            Burden of Disease study, it ranks fifth among the main risk factors
-            for disease in men in Germany. However, it is not only illness that
-            is a consequence of excessive consumption that harms the individual
-            and can also have an impact on the state and thus society as a
-            whole, but also criminal offences and accidents. In 2019, around
-            222,000 criminal offences were committed under the influence of
-            alcohol, and it is estimated that 45.1% of all fatal road traffic
-            accidents can be attributed to alcohol consumption.
+            risks, and according to the World Health Organization&apos;s (WHO)
+            Global Burden of Disease study, it ranks fifth among the main risk
+            factors for disease in men in Germany. However, it is not only
+            illness that is a consequence of excessive consumption that harms
+            the individual and can also have an impact on the state and thus
+            society as a whole, but also criminal offences and accidents. In
+            2019, around 222,000 criminal offences were committed under the
+            influence of alcohol, and it is estimated that 45.1% of all fatal
+            road traffic accidents can be attributed to alcohol consumption.
           </Text>
         </Box>
       </Flex>
