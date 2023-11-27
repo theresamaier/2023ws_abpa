@@ -16,6 +16,7 @@ const SimplifiedTable = ({ columns, data }) => {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 <th
+                  key={column.id} // Adding key prop here
                   {...column.getHeaderProps()}
                   style={{
                     padding: "14px",

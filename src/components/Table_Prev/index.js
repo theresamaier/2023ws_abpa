@@ -11,10 +11,11 @@ const SimpleTable = ({ columns, data }) => {
       style={{ border: "1px solid black", borderCollapse: "collapse" }}
     >
       <thead>
-        {headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map((column) => (
+        {headerGroups.map((headerGroup, index) => (
+          <tr key={index} {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map((column, columnIndex) => (
               <th
+                key={columnIndex} // Adding key prop here
                 {...column.getHeaderProps()}
                 style={{
                   padding: "14px",
