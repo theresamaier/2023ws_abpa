@@ -33,13 +33,18 @@ const SimpleTable = ({ columns, data }) => {
         ))}
       </thead>
       <tbody {...getTableBodyProps()}>
-        {rows.map((row) => {
+        {rows.map((row, rowIndex) => {
           prepareRow(row);
           return (
-            <tr {...row.getRowProps()} style={{ border: "1px solid black" }}>
-              {row.cells.map((cell) => (
+            <tr
+              {...row.getRowProps()}
+              key={rowIndex} // Adding key prop here
+              style={{ border: "1px solid black" }}
+            >
+              {row.cells.map((cell, cellIndex) => (
                 <td
                   {...cell.getCellProps()}
+                  key={cellIndex} // Adding key prop here
                   style={{
                     padding: "14px",
                     border:

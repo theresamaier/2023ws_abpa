@@ -23,20 +23,20 @@ const Home = () => {
       <Text mt={"60px"} textAlign="justify">
         Alcohol is well established in our society and is almost seen as an
         essential companion when it comes to social interaction. At most
-        corporate parties, business meetings or even casual get-togethers and
+        corporate parties, business meetings, or even casual get-togethers and
         after-work meetings, drinking is part of our working culture. The same
-        applies to university settings: student parties, bar nights and drinking
-        games are an integral part of campus life. The link between alcohol and
-        social interaction is so strong that consumption is often seen as a
-        means of integrating into the community. Such a normalization carries
-        risks, as it increases the pressure on those who do not or cannot drink
-        alcohol. Furthermore, this can easily turn into excessive consumption
-        and alcohol abuse, especially among young people who may not have
-        sufficient experience or self-control. We tend not to realize how much
-        alcohol is tolerated and how difficult it might be for people with a
-        serious alcohol problem to resist this constant confrontation. The mere
-        fact that liquor is offered at the supermarket counter to increase the
-        likelihood of impulse purchases is ethically doubtful. Particularly
+        applies to university settings: student parties, bar nights, and
+        drinking games are an integral part of campus life. The link between
+        alcohol and social interaction is so strong that consumption is often
+        seen as a means of integrating into the community. Such normalization
+        carries risks, as it increases the pressure on those who do not or
+        cannot drink alcohol. Furthermore, this can easily turn into excessive
+        consumption and alcohol abuse, especially among young people who may not
+        have sufficient experience or self-control. We tend not to realize how
+        much alcohol is tolerated and how difficult it might be for people with
+        a serious alcohol problem to resist this constant confrontation. The
+        mere fact that liquor is offered at the supermarket counter to increase
+        the likelihood of impulse purchases is ethically doubtful. Particularly
         considering that alcohol has far-reaching social and health effects when
         it goes beyond mere consumption. So what exactly is the situation in
         Germany? Are we being misled by images of alcohol excesses from the
@@ -71,9 +71,9 @@ const Home = () => {
         </Box>
       </Flex>
       <Text mt={"30px"} textAlign="justify">
-        Well, that seems to be a good indication that we don't have a
-        significant alcohol problem in germany, as consumption behavior is
-        steadily improving. Let's consider the situation from a different
+        Well, that seems to be a good indication that we don&apos;t have a
+        significant alcohol problem in Germany, as consumption behavior is
+        steadily improving. Let&apos;s consider the situation from a different
         perspective:
       </Text>
       <Box width="100%" mt={"80px"}>
@@ -115,11 +115,6 @@ const Home = () => {
           know whether my own alcohol consumption is risky or even harmful?
         </Text>
       </Box>
-      <Box width="100%" mt={"90px"}>
-        <Heading fontSize="xl" mb={8}>
-          How much alcohol is "normal", "permitted" or considered harmless?
-        </Heading>
-      </Box>
       <Flex>
         <Box width="1000%" mt={"0px"}>
           <Text textAlign="justify">
@@ -149,10 +144,10 @@ const Home = () => {
             of disease. Just for your information: 20 g of ethanol per day is
             equivalent to about 0.5 litres of beer, 0.2 litres of wine or 0.06
             litres of spirits, depending on the alcohol content of the beverage
-            types. Well, I don't know how you feel, but I'm surprised by this
-            strict classification. It feels like you're already in risky or even
-            more dangerous drinking categories as soon as you go out on a friday
-            evening.
+            types. Well, I don&apos;t know how you feel, but I&apos;m surprised
+            by this strict classification. It feels like you&apos;re already in
+            risky or even more dangerous drinking categories as soon as you go
+            out on a Friday evening.
           </Text>
         </Box>
       </Flex>
@@ -188,7 +183,7 @@ const Home = () => {
         and health problems. Both men and women have a relatively high
         prevalence of risky consumption, which is a risk factor for alcohol
         dependence and other health problems. The authors of the ESA 2021
-        therefore emphasise the continued need for alcohol prevention measures
+        therefore emphasize the continued need for alcohol prevention measures
         in Germany.
       </Text>
       <Box width="100%" mt={"80px"}>
@@ -217,8 +212,8 @@ const Home = () => {
       </Box>
       <Box width="100%" mt={"40px"}>
         <Text>
-          Let's now take a look at the age distribution of binge drinking among
-          women:
+          Let&apos;s now take a look at the age distribution of binge drinking
+          among women:
         </Text>
       </Box>
       <Flex>
@@ -277,7 +272,7 @@ const Home = () => {
             are also contributing to this decline. In 2021, there was also a
             decrease of 9.1% in hospitalizations for acute alcohol intoxication
             across all age groups compared to 2020 and as much as 30.8% less
-            than in 2019.The data suggests that the coronavirus pandemic,
+            than in 2019. The data suggests that the coronavirus pandemic,
             cancelled parties and closed venues could have an impact on the
             decline, and demographic changes also play a role. Despite the
             decline, the risk of alcohol poisoning among young people,
@@ -433,8 +428,8 @@ const Home = () => {
             }}
           >
             Sources: <br></br>
-            1. Alkoholkonsum in Deutschland: Zahlen & Fakten. (n.d.). Retrieved
-            November 4, 2023, from
+            1. Alkoholkonsum in Deutschland: Zahlen &amp; Fakten. (n.d.).
+            Retrieved November 4, 2023, from
             https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/a/alkohol
             <br></br>
             2. Alkoholmissbrauch 2021: 42 % weniger Klinikbehandlungen junger
@@ -450,7 +445,7 @@ const Home = () => {
             4. Deutsche Hauptstelle für Suchtfragen e.V. (2023). DHS Jahrbuch
             Sucht 2023. Pabst Science Publishers.
             https://www.dhs.de/unsere-arbeit/dhs-jahrbuch-sucht <br></br>
-            5. Kraus, L., Loy, J. K., Wilms, N., & Starker, A. (2021).
+            5. Kraus, L., Loy, J. K., Wilms, N., &amp; Starker, A. (2021).
             Altersspezifische Trends des risikoreichen Alkoholkonsums in
             Deutschland: Parallele oder unterschiedliche Verläufe?
             Bundesgesundheitsblatt - Gesundheitsforschung - Gesundheitsschutz,
@@ -468,11 +463,11 @@ const Home = () => {
             International. https://doi.org/10.3238/arztebl.m2022.0314
             <br></br>
             8. Rauschert, C., Möckl, J., Seitz, N.-N., Wilms, N., Olderbak, S.,
-            & Kraus, L. (2022). The use of psychoactive substances in Germany.
-            Deutsches Ärzteblatt International.
+            &amp; Kraus, L. (2022). The use of psychoactive substances in
+            Germany. Deutsches Ärzteblatt International.
             https://doi.org/10.3238/arztebl.m2022.0244<br></br>
             9.Schaller, K., Kahnert, S., Garcia-Verdugo, R., Treede, I., Graen,
-            L., & Ouédraogo, N. (2022). Alkoholatlas Deutschland 2022. Pabst
+            L., &amp; Ouédraogo, N. (2022). Alkoholatlas Deutschland 2022. Pabst
             Science Publishers.
             <br></br>
           </Text>
